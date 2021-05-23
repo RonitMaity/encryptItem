@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 
-app.post('/book', (req, res) => {
+app.post('/AES', (req, res) => {
     const book = req.query.password;
 
     // const book1 = 
