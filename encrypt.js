@@ -25,7 +25,7 @@ app.post('/AES', (req, res) => {
 
     randomKey = "U2FsdGVkX19MVbnvxwp+v1OVxBpcU+X3ePd5roySBtQ=";
     const key = crypto.AES.encrypt(book, randomKey).toString();
-    res.send(key)
+    res.send({'cipherData':key})
 
 });
 
