@@ -23,10 +23,10 @@ app.post('/AES', (req, res) => {
     // Output the book to the console for debugging
     console.log(book);
 
-    randomKey = "U2FsdGVkX19MVbnvxwp+v1OVxBpcU+X3ePd5roySBtQ=";
+    randomKey = "DFn1gA0RlQ2SrJyk48fI3H8u0mziy2Tu";
     const key = crypto.AES.encrypt(book, randomKey).toString();
     res.send({'cipherData':key})
 
 });
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 3000);
